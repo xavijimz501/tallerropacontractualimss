@@ -829,6 +829,12 @@ body {
   color: #545454;
 }
 
+.tabla-registros th.columna-cobertura,
+.tabla-registros td.columna-cobertura {
+  min-width: 600px;
+  white-space: normal;
+}
+
 /* Filas */
 
 .tabla-registros tbody tr {

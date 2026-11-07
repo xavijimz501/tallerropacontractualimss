@@ -87,7 +87,8 @@ export default function Admin() {
       RFC: registro.rfc,
       "Tipo de empresa": registro.tipo_empresa,
       Descripción: registro.descripcion,
-      "Bienes y servicios": registro.bienes_servicios,
+      "Categorías generales": registro.categorias_generales,
+      Subcategorías: registro.familias,
       // "Tamaño de empresa": registro.tamanio_empresa,
       // Sectores: registro.sectores || "",
       "Fecha de registro": formatearFecha(registro.fecha_registro),
@@ -177,15 +178,16 @@ export default function Admin() {
                   <th>Nombre del representante</th>
                   <th>Teléfono del representante</th>
                   <th>Correo del representante</th>
-                  <th>¿Ha vendido al gobierno?</th>
+                  <th>Ha vendido al gobierno</th>
                   <th>Estado</th>
-                  <th>Cobertura</th>
+                  <th className="columna-cobertura">Cobertura</th>
                   <th>Razón social</th>
                   <th>RFC</th>
                   <th>Número de empleados</th>
                   <th>Tipo de empresa</th>
+                  <th>Bienes</th>
+                  <th>Servicios</th>
                   <th>Descripción</th>
-                  <th>Bienes y servicios</th>
                   <th>Fecha de registro</th>
                 </tr>
               </thead>
@@ -193,7 +195,7 @@ export default function Admin() {
               <tbody>
                 {registrosFiltrados.length === 0 ? (
                   <tr>
-                    <td colSpan="17" className="tabla-vacia">
+                    <td colSpan="18" className="tabla-vacia">
                       No se encontraron registros.
                     </td>
                   </tr>
@@ -218,7 +220,7 @@ export default function Admin() {
 
                       <td>{registro.estado}</td>
 
-                      <td>{registro.cobertura}</td>
+                      <td className="columna-cobertura">{registro.cobertura || "—"}</td>
 
                       <td>{registro.razon_social}</td>
 
@@ -227,8 +229,10 @@ export default function Admin() {
                       <td>{registro.numero_empleados}</td>
 
                       <td>{registro.tipo_empresa || "—"}</td>
+
+                      <td>{registro.categorias_generales || "—"}</td>
+                      <td>{registro.familias || "—"}</td>
                       <td>{registro.descripcion || "—"}</td>
-                      <td>{registro.bienes_servicios || "—"}</td>
                       <td>{formatearFecha(registro.fecha_registro)}</td>
                     </tr>
                   ))

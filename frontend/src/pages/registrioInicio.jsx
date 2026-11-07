@@ -21,8 +21,10 @@ export default function Inicio() {
           {" "}
           La <strong>Secretaría Anticorrupción y Buen Gobierno </strong>
           invita a las micro, pequeñas y medianas empresas (MIPYMES) interesadas en conocer las oportunidades que ofrecen las compras públicas a registrarse en esta plataforma, con el propósito de fortalecer la vinculación y promover su participación como potenciales proveedoras del Gobierno Federal.
-          A través de este registro, podrán recibir información gratuita sobre actividades, herramientas y acciones de orientación y acompañamiento que contribuyan a fortalecer sus capacidades para participar en las compras públicas.
           {" "}
+        </p>
+        <p style={{ textAlign: 'justify' }}>
+          A través de este registro, podrán recibir información gratuita sobre actividades, herramientas y acciones de orientación y acompañamiento que contribuyan a fortalecer sus capacidades para participar en las compras públicas.
         </p>
         <p>
           {" "}

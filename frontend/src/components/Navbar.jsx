@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import logoBanner from "../assets/logo_banner.png";
 
 export default function Navbar() {
   return (
@@ -17,11 +18,21 @@ export default function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+        <img
+          src={logoBanner}
+          alt="Logo"
+          style={{
+            height: "40px",
+            width: "auto",
+            marginRight: "25px",
+            transform: "translateY(20px)",
+          }}
+        />
 
         <Link
           className="navbar-brand sub-navbar"
           to="/"
-          style={{ textTransform: 'none' }}
+          style={{ textTransform: 'none', transform: "translateY(8px)" }}
         >
           Registro de MIPYMES
         </Link>

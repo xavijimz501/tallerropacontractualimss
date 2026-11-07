@@ -679,7 +679,7 @@ export default function RegistroPage() {
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="razon_social">Razón social</label>
+                    <label htmlFor="razon_social">Razón Social</label>
 
                     <input
                       id="razon_social"
@@ -711,7 +711,7 @@ export default function RegistroPage() {
 
                   <div className="form-group">
                     <label htmlFor="estado">
-                      Entidad federativa donde se ubica la MIPYME
+                      Entidad Federativa donde se ubica la MIPYME
                     </label>
 
                     <select
@@ -854,9 +854,9 @@ export default function RegistroPage() {
                       value={form.venta_gobierno}
                       onChange={handleChange}
                     >
-                      <option value="">SI / NO</option>
-                      <option value="SI">Sí</option>
-                      <option value="NO">No</option>
+                      <option value="">Selecciona una opción</option>
+                      <option value="SI">SI</option>
+                      <option value="NO">NO</option>
                     </select>
                   </div>
 
@@ -951,8 +951,9 @@ export default function RegistroPage() {
                       value={form.descripcion}
                       onChange={handleChange}
                       placeholder="Texto"
-                      maxLength={150}
+                      maxLength={300}
                     />
+                    <small>{form.descripcion.length}/300 caracteres</small>
                   </div>
 
                   {/* Botón agregar */}

@@ -51,21 +51,20 @@ const obtenerRegistros = async (req, res) => {
     ) AS descripcion,
 
     (
-      SELECT GROUP_CONCAT(
-        CONCAT(
-          cg.nombre,
-          ' - ',
-          f.nombre
-        )
-        SEPARATOR ', '
-      )
+      SELECT GROUP_CONCAT(cg.nombre SEPARATOR ', ')
       FROM taller_ropa_registros_bienes b
       INNER JOIN cat_talleres_categoria_general cg
         ON cg.id = b.id_cat_general
+      WHERE b.id_taller = r.id
+    ) AS categorias_generales,
+
+    (
+      SELECT GROUP_CONCAT(f.nombre SEPARATOR ', ')
+      FROM taller_ropa_registros_bienes b
       INNER JOIN cat_talleres_familia f
         ON f.id = b.id_familia
       WHERE b.id_taller = r.id
-    ) AS bienes_servicios,
+    ) AS familias,
 
     r.fecha_registro
 

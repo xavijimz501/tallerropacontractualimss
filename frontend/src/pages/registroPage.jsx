@@ -1146,7 +1146,7 @@ export default function RegistroPage() {
                   className="btn-primary"
                   disabled={guardando}
                 >
-                  {guardando ? "Guardando..." : "Registrar taller"}
+                  {guardando ? "Guardando..." : "Registrar"}
                 </button>
               </div>
             </form>

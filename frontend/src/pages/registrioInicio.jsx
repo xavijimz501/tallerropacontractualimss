@@ -29,9 +29,11 @@ export default function Inicio() {
         <p>
           {" "}
           <strong>Para ello, te invitamos a completar el siguiente formulario.</strong>
-          <p>¡Agradecemos tu interés!</p>
+
           {" "}
         </p>
+        <p>¡Agradecemos tu interés!</p>
+
         <button className="btn-registro" onClick={irARegistro}>
           {" "}
           Comenzar registro{" "}

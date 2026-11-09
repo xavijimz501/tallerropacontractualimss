@@ -7,6 +7,12 @@ body {
   font-family: Arial, sans-serif;
 }
 
+@media (max-width: 799px) {
+  .buengobierno-logo {
+    display: none;
+  }
+}
+
 /* ========================= INICIO ========================= */
 .inicio {
   min-height: 100vh;

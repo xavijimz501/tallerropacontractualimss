@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import logoBanner from "../assets/logo_banner.png";
+import logoBanner from "../assets/buengobierno_logo.svg";
 
 export default function Navbar() {
   return (
@@ -19,22 +19,24 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <img
+          className="buengobierno-logo"
           src={logoBanner}
           alt="Logo"
           style={{
             height: "40px",
             width: "auto",
             marginRight: "25px",
-            transform: "translateY(20px)",
+            transform: "translateY(23px)",
           }}
         />
 
         <Link
           className="navbar-brand sub-navbar"
           to="/"
-          style={{ textTransform: 'none', transform: "translateY(8px)" }}
+          style={{ textTransform: 'none', transform: "translateY(5px)" }}
         >
           Registro de MIPYMES
+
         </Link>
 
         <div

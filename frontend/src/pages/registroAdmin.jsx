@@ -185,8 +185,8 @@ export default function Admin() {
                   <th>RFC</th>
                   <th>Número de empleados</th>
                   <th>Tipo de empresa</th>
-                  <th>Bienes</th>
-                  <th>Servicios</th>
+                  <th className="columna-bienes">Bienes</th>
+                  <th className="columna-servicios">Servicios</th>
                   <th>Descripción</th>
                   <th>Fecha de registro</th>
                 </tr>

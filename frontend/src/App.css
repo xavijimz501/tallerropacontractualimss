@@ -841,6 +841,18 @@ body {
   white-space: normal;
 }
 
+.tabla-registros th.columna-bienes,
+.tabla-registros td.columna-bienes {
+  min-width: 400px;
+  white-space: normal;
+}
+
+.tabla-registros th.columna-servicios,
+.tabla-registros td.columna-servicios {
+  min-width: 400px;
+  white-space: normal;
+}
+
 /* Filas */
 
 .tabla-registros tbody tr {

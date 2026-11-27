@@ -82,7 +82,7 @@ export default function Admin() {
       Estado: registro.estado,
       Cobertura: registro.cobertura,
       "Numero de empleados": registro.numero_empleados,
-      // "Nombre comercial": registro.nombre_comercial,
+      "Nombre comercial": registro.nombre_comercial,
       "Razón social": registro.razon_social,
       RFC: registro.rfc,
       "Tipo de empresa": registro.tipo_empresa,
@@ -176,15 +176,16 @@ export default function Admin() {
                   <th>Correo</th>
                   <th>Teléfono</th>
                   <th>Nombre del representante</th>
-                  <th>Teléfono del representante</th>
                   <th>Correo del representante</th>
-                  <th>Ha vendido al gobierno</th>
-                  <th>Estado</th>
-                  <th className="columna-cobertura">Cobertura</th>
-                  <th>Razón social</th>
+                  <th>Teléfono del representante</th>
+                  <th>Nombre comercial</th>
                   <th>RFC</th>
+                  <th>Razón social</th>
                   <th>Número de empleados</th>
+                  <th>Estado</th>
                   <th>Tipo de empresa</th>
+                  <th className="columna-cobertura">Cobertura</th>
+                  <th>Ha vendido al gobierno</th>
                   <th className="columna-bienes">Bienes</th>
                   <th className="columna-servicios">Servicios</th>
                   <th>Descripción</th>
@@ -195,7 +196,7 @@ export default function Admin() {
               <tbody>
                 {registrosFiltrados.length === 0 ? (
                   <tr>
-                    <td colSpan="18" className="tabla-vacia">
+                    <td colSpan="19" className="tabla-vacia">
                       No se encontraron registros.
                     </td>
                   </tr>
@@ -212,27 +213,32 @@ export default function Admin() {
 
                       <td>{registro.nombre_representante || "—"}</td>
 
-                      <td>{registro.telefono_representante || "—"}</td>
-
                       <td>{registro.correo_representante || "—"}</td>
 
-                      <td>{registro.venta_gobierno || "—"}</td>
+                      <td>{registro.telefono_representante || "—"}</td>
 
-                      <td>{registro.estado}</td>
-
-                      <td className="columna-cobertura">{registro.cobertura || "—"}</td>
-
-                      <td>{registro.razon_social}</td>
+                      <td>{registro.nombre_comercial || "—"}</td>
 
                       <td>{registro.rfc}</td>
 
+                      <td>{registro.razon_social}</td>
+
                       <td>{registro.numero_empleados}</td>
+
+                      <td>{registro.estado}</td>
 
                       <td>{registro.tipo_empresa || "—"}</td>
 
+                      <td className="columna-cobertura">{registro.cobertura || "—"}</td>
+
+                      <td>{registro.venta_gobierno || "—"}</td>
+
                       <td>{registro.categorias_generales || "—"}</td>
+
                       <td>{registro.familias || "—"}</td>
+
                       <td>{registro.descripcion || "—"}</td>
+
                       <td>{formatearFecha(registro.fecha_registro)}</td>
                     </tr>
                   ))

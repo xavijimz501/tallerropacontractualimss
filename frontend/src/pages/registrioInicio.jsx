@@ -23,7 +23,8 @@ export default function Inicio() {
           {" "}
         </p>
         <p style={{ textAlign: 'justify' }}>
-          A través de este registro, podrán recibir <strong> información gratuita sobre actividades, herramientas y acciones de orientación y acompañamiento </strong>que contribuyan a fortalecer sus capacidades para participar en las compras públicas.
+          Al registrarse, podrán recibir <strong> información gratuita sobre las actividades de orientación y acompañamiento</strong> y conocer herramientas para identificar oportunidades de venta, entender los requisitos y preparar tus propuestas.
+
         </p>
         <p style={{ textAlign: 'justify' }}>
           {" "}

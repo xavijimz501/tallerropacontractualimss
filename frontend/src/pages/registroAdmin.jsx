@@ -76,19 +76,19 @@ export default function Admin() {
       Correo: registro.correo,
       Teléfono: registro.telefono,
       "Nombre del representante": registro.nombre_representante,
-      "Teléfono del representante": registro.telefono_representante,
       "Correo del representante": registro.correo_representante,
-      "Venta al gobierno": registro.venta_gobierno,
-      Estado: registro.estado,
-      Cobertura: registro.cobertura,
-      "Numero de empleados": registro.numero_empleados,
+      "Teléfono del representante": registro.telefono_representante,
       "Nombre comercial": registro.nombre_comercial,
-      "Razón social": registro.razon_social,
       RFC: registro.rfc,
+      "Razón social": registro.razon_social,
+      "Número de empleados": registro.numero_empleados,
+      Estado: registro.estado,
       "Tipo de empresa": registro.tipo_empresa,
+      Cobertura: registro.cobertura,
+      "Ha vendido al gobierno": registro.venta_gobierno,
+      Bienes: registro.categorias_generales,
+      Servicios: registro.familias,
       Descripción: registro.descripcion,
-      "Categorías generales": registro.categorias_generales,
-      Subcategorías: registro.familias,
       // "Tamaño de empresa": registro.tamanio_empresa,
       // Sectores: registro.sectores || "",
       "Fecha de registro": formatearFecha(registro.fecha_registro),
@@ -188,7 +188,7 @@ export default function Admin() {
                   <th>Ha vendido al gobierno</th>
                   <th className="columna-bienes">Bienes</th>
                   <th className="columna-servicios">Servicios</th>
-                  <th>Descripción</th>
+                  <th className="columna-descripcion">Descripción</th>
                   <th>Fecha de registro</th>
                 </tr>
               </thead>

@@ -790,7 +790,8 @@ body {
 
 .tabla-container {
   width: 100%;
-  overflow-x: auto;
+  max-height: 70vh;
+  overflow: auto;
 
   border: 1px solid #e2e2e2;
   border-radius: 8px;
@@ -815,7 +816,11 @@ body {
 }
 
 .tabla-registros th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   padding: 13px 12px;
+  background: #611232;
 
   text-align: left;
   font-weight: 600;
@@ -849,6 +854,12 @@ body {
 
 .tabla-registros th.columna-servicios,
 .tabla-registros td.columna-servicios {
+  min-width: 400px;
+  white-space: normal;
+}
+
+.tabla-registros th.columna-descripcion,
+.tabla-registros td.columna-descripcion {
   min-width: 400px;
   white-space: normal;
 }
